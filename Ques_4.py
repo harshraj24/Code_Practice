@@ -1,5 +1,5 @@
 # WAP to enter n datas of students in a dictionary and diplay the 2nd position student with their average
-# Input :  5
+# Input :  3
 #          Harsh 20 30 60
 #          Bharati 50 90 70
 #          Abhimanyu 60 90 80
@@ -20,6 +20,6 @@ for i,j in student_marks.items():
     k.append(summation)
 l=sorted(k)
 t=l[1]
-for i in k:
-    if k[i]==l[1]:
+for i in range(len(k)):
+    if k[i] == t:
         print(i,student_marks.items())
