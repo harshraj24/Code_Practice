@@ -4,3 +4,22 @@
 #          Bharati 50 90 70
 #          Abhimanyu 60 90 80
 # Output : Bharati 70.00
+n = int(input())
+sum=0
+student_marks = {}
+for i in range(n):
+    name, *line = input().split()
+    scores = list(map(float, line))
+    student_marks[name] = scores
+    student_marksi={}
+    student_marksi[name]=scores
+k=[]
+for i,j in student_marks.items():
+    lst=j.copy()
+    summation=(lst[0]+lst[1]+lst[2])/3
+    k.append(summation)
+l=sorted(k)
+t=l[1]
+for i in k:
+    if k[i]==l[1]:
+        print(i,student_marks.items())
