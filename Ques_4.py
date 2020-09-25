@@ -13,13 +13,10 @@ for i in range(n):
     student_marks[name] = scores
     student_marksi={}
     student_marksi[name]=scores
-k=[]
+    
+k={}
 for i,j in student_marks.items():
     lst=j.copy()
     summation=(lst[0]+lst[1]+lst[2])/3
-    k.append(summation)
-l=sorted(k)
-t=l[1]
-for i in range(len(k)):
-    if k[i] == t:
-        print(i,student_marks.items())
+    k[i]=summation
+        
